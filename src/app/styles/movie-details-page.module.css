@@ -1,0 +1,79 @@
+.movieDetails {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movieDetailsCard {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.85) 10%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.95) 90%
+  );
+  background-attachment: fixed;
+  margin: 0;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.posterContainer {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer {
+  flex: 1 1 60%;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+
+.infoContainer h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.infoContainer h3 {
+  color: orange;
+  font-family: 'Oswald';
+  font-weight: normal;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movieDetailsCard {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .posterContainer {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .infoContainer {
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .infoContainer p {
+    font-size: 0.9rem;
+  }
+}
