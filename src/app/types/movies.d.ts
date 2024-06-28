@@ -26,4 +26,6 @@ export interface MovieDetails extends Movie {
   overview: string;
   backdrop_path: string;
   tagline: string;
+  release_date: string;
+  homepage: string;
 }
