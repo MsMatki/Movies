@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Mobile-first: stack elements vertically */
 }
 
 .overlay {
@@ -18,53 +19,46 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.85) 10%,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(0, 0, 0, 0.95) 90%
-  ); /* Adjust gradient colors and opacity as needed */
+  background-image: var(--color-gradient); 
 }
 
 .movieDetailsCard {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.85) 10%,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(0, 0, 0, 0.95) 90%
-  );
+  background-image: var(--color-gradient);
   background-attachment: fixed;
   margin: 0;
-  height: 70vh;
-  width: 100%;
+  height: auto; /* Mobile-first: auto height */
+  width: 100%; /* Mobile-first: full width */
   display: flex;
-  align-items: stretch;
+  flex-direction: column; /* Mobile-first: stack elements vertically */
   justify-content: center;
 }
 
 .posterContainer {
-  flex: 1 1 40%;
+  width: 100%; /* Mobile-first: full width */
   display: flex;
   justify-content: center;
+  margin-bottom: 20px; /* Mobile-first: margin at the bottom */
 }
 
 .infoContainer {
-  flex: 1 1 60%;
+  width: 100%; /* Mobile-first: full width */
   display: flex;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--color-shadow);
   flex-direction: column;
   padding: 20px;
-  color: white;
+  color: var(--color-text);
 }
 
 .infoContainer h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem; /* Mobile-first: smaller font size */
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .infoContainer h3 {
-  color: orange;
+  color: var(--color-tertiary);
   font-family: 'Oswald';
   font-weight: normal;
   padding: 1rem 0;
@@ -72,36 +66,60 @@
 
 .buttonGroup {
   display: flex;
-  justify-content: flex-start; /* Align buttons to the start of the container */
+  justify-content: center; /* Mobile-first: center align buttons */
   align-items: center; /* Center items vertically */
   gap: 10px; /* Add space between buttons if more are added */
   margin-top: 20px; /* Space between the detail items and the button */
-  width: auto; /* Ensure the container doesn't stretch */
+  width: 100%; /* Ensure the container doesn't stretch */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .movieDetailsCard {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .posterContainer {
-    flex: none;
-    margin-bottom: 20px;
-  }
-
-  .infoContainer {
-    flex: none;
-  }
-}
-
-@media (max-width: 480px) {
+/* Medium Devices (Tablets) */
+@media (min-width: 481px) {
   .infoContainer h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .infoContainer p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
+
+/* Large Devices (Desktops) */
+@media (min-width: 769px) {
+  .movieDetailsCard {
+    flex-direction: row; /* Larger screens: side by side layout */
+    height: 70vh; /* Restore original height */
+  }
+
+  .posterContainer {
+    flex: 1 1 35%;
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .infoContainer {
+    flex: 1 1 55%;
+  }
+
+  .buttonGroup {
+    justify-content: flex-start; /* Align buttons to the start of the container */
+    width: auto; /* Ensure the container doesn't stretch */
+  }
+
+  .infoContainer h1 {
+    font-size: 2.6rem; /* Restore original font size */
+  }
+
+  .infoContainer h3{
+    font-size: 1.5rem;
+  }
+
+  .infoContainer h4{
+    font-size: 1.3rem;
+    font-weight: normal
+  }
+
+  .infoContainer p {
+    font-size: 1.rem; /* Restore original font size */
+  }
+}
+

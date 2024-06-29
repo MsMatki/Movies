@@ -34,7 +34,7 @@ const MovieDetailsPage: FC<MovieDetailsProps> = async ({ params }) => {
     { heading: 'Original Release', text: release_date },
     { heading: 'Status', text: status },
     { heading: 'Running Time', text: `${runtime} min` },
-    { heading: 'Vote Average', text: `${vote_average}/10` },
+    { heading: 'Vote Average', text: `${vote_average.toFixed(1)}/10` },
   ];
 
   return (

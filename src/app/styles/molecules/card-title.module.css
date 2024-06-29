@@ -11,7 +11,7 @@
 }
 
 .cardTitle h6{
-    color:white;
+    color:var(--color-text);
     margin:0;
     white-space: nowrap;
     overflow: hidden;

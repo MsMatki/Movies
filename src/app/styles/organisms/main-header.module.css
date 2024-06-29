@@ -1,6 +1,6 @@
 .header {
   height: 60px;
   position: relative;
-  background: linear-gradient(rgba(56, 54, 58, 1), rgba(35, 33, 39, 1));
+  background: var(--color-secondary-gradient);
   box-shadow: 0 1px 6px 0 rgba(64, 196, 253, 1);
 }

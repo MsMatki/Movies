@@ -8,8 +8,8 @@ interface MovieRatingProps {
 
 const MovieRating: FC<MovieRatingProps> = ({ rating }) => (
   <div className={styles.movieRating}>
-    <StarIcon height='20' width='20'/>
-    <span>{rating}</span>
+    <StarIcon height='18' width='18'/>
+    <span className={styles.rating}>{rating.toFixed(1)}</span>
   </div>
 );
 

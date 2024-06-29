@@ -12,13 +12,13 @@
   
   .detailItem h4 {
     margin: 0;
-    color: white; /* Orange color for headings */
+    color: var(--color-text);
     font-family: 'Oswald';
   }
   
   .detailItem p {
     margin: 5px 0 0 0;
-    color: #FFA500;
+    color: var(--color-tertiary);
     font-family: 'Oswald';
     font-size: 1.4rem
   }
