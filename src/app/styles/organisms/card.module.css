@@ -1,6 +1,7 @@
 .card {
-  width: 100%;
-  height: 400px;
+  width:80vw;
+  max-width: 350px;
+  height: 450px;
   padding: 3px 4px;
   background-color: var(--color-secondary);
   display: flex;
@@ -26,4 +27,25 @@
 
 .image {
   object-fit: cover;
+}
+
+@media(min-width: 768px){
+  .card{
+    width: 225px;
+  height: 400px;
+  }
+}
+
+@media(min-width: 1200px){
+  .card{
+    height: 380px;
+    width: 220px;
+  }
+}
+
+@media(min-width: 1550px){
+  .card{
+    height: 400px;
+    width: 255px;
+  }
 }

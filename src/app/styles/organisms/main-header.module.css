@@ -1,6 +1,35 @@
 .header {
   height: 60px;
-  position: relative;
+  position: fixed;
+  width: 100%;
   background: var(--color-secondary-gradient);
   box-shadow: 0 1px 6px 0 rgba(64, 196, 253, 1);
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.main-heading {
+  display: flex;
+  align-items: center;
+}
+.main-heading h1 {
+  color: rgb(3, 151, 214);
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+.main-heading span {
+  color: white;
+  font-family: Impact;
+  letter-spacing: 1px;
+  font-size: 24px;
 }

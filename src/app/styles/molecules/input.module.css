@@ -1,0 +1,39 @@
+.inputWrapper {
+  background-color: rgb(25, 25, 25);
+  height: 30px;
+  width: 300px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchInput {
+  background-color: rgb(25, 25, 25);
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+.searchInput::placeholder {
+  padding-left: 10px;
+}
+
+.dropdown {
+  background-color: #333;
+  border: 1px solid #444;
+  position: absolute;
+  border-radius: 4px;
+  margin-top: 5px;
+  z-index: 1000;
+  min-height: 200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  list-style: none;
+  width: 300px;
+}
+
+

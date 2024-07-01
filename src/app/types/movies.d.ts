@@ -17,7 +17,7 @@ export type Movie = {
   poster_path: string;
 };
 
-export interface MovieDetails extends Movie {
+export interface IMovieDetails extends Movie {
   status: string;
   overview: string;
   production_companies: ProductionCompanies[];
