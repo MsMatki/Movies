@@ -1,0 +1,20 @@
+.cardTitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    text-transform: uppercase;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.cardTitle h6{
+    color:var(--color-text);
+    margin:0;
+    white-space: nowrap;
+    overflow: hidden;
+    padding:0 5px;
+    font-weight:normal;
+}

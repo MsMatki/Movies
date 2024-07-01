@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 15px 15px;
+  background-color:rgba(80,80,80,0.5);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  color: black;
+  background-color: var(--color-tertiary);
+  transition: 0.2s;
+}

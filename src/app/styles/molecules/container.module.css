@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (min-width: 480px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 20px;
+      max-width: 900px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: 1550px) {
+    .container {
+      max-width: 1400px;
+      padding: 0 20px;
+    }
+  }

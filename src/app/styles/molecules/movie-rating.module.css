@@ -1,0 +1,19 @@
+.movieRating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--color-shadow);
+    border-radius: 0 0 0 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    z-index: 1;
+}
+
+.rating{
+    padding: 0 5px;
+    font-size: 1rem;
+}

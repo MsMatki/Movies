@@ -1,0 +1,28 @@
+.dropdownItem a {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #555;
+  }
+  
+  .dropdownItem img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .dropdownItem h4 {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
