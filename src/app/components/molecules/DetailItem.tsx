@@ -11,7 +11,7 @@ const DetailItem: FC<DetailItemProps> = ({ details }) => {
       {details.map((detail, index) => (
         <div key={index} className={styles.detailItem}>
           <h4>{detail.heading}</h4>
-          <p>{detail.text}</p>
+          {detail.text ? <p>{detail.text}</p> : <p>N/A</p>}
         </div>
       ))}
     </div>

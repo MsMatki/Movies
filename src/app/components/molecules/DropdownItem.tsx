@@ -20,7 +20,6 @@ const DropdownItem: FC<DropdownItemProps> = ({ movie }) => {
             alt={title}
             width={40}
             height={60}
-            objectFit='cover'
           />
         ) : (
           <div

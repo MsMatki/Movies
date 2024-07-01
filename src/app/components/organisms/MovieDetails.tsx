@@ -47,7 +47,7 @@ const MovieDetails: FC<MovieDetailsProps> = ({ movie }) => {
               <Image
                 src={`https://image.tmdb.org/t/p/w500${poster_path}`}
                 alt={title}
-                width={600}
+                width={550}
                 height={500}
                 layout='intrinsic'
               />
