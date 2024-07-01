@@ -17,7 +17,7 @@ const Card: FC<CardProps> = ({ movie }) => {
         <MovieRating rating={movie.vote_average} />
         <div className={classes.imageContainer}>
           <Image
-            layout='fill'
+            fill
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt='Movie Poster'
             className={classes.image}

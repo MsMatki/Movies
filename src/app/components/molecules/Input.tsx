@@ -48,7 +48,7 @@ const Input: FC = () => {
           placeholder='Search for movies...'
           className={styles.searchInput}
         />
-        {loading && <LoadingScreen width='30px' height='30px' color='green'/>}
+        {loading && <LoadingScreen width='30px' height='30px' color='lightblue'/>}
       </div>
       {searchResults.length > 0 && (
         <ul className={styles.dropdown}>

@@ -20,7 +20,7 @@ const MoviesList: FC = async () => {
   return (
     <Container>
       <div className={classes.moviesList}>
-        <Suspense fallback={<LoadingScreen height="70px" width="70px" color="blue" position="absolute"/>}>
+        <Suspense fallback={<LoadingScreen height="70px" width="70px" color="lightblue" position="absolute"/>}>
           <Movies />
         </Suspense>
       </div>
