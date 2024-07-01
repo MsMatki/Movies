@@ -1,3 +1,23 @@
+# Movies
+
+## Project Description
+
+This Movies App fetches the list of latest movies using the TMDB API. It displays the list of popular movies on the homepage, and users can click on any movie to view detailed information about it, including the title, release date, rating, and a brief synopsis.
+
+### Features
+
+- Latest Movies List: The homepage displays a list of the latest movies fetched from the TMDB API.
+- Movie Details: Clicking on any movie item will take you to a detailed page that provides comprehensive information about the movie.
+- Search Functionality: The app includes a search bar where users can search for any movie. As you type, it fetches and displays matching movies from the TMDB API.
+- CSS Modules: The project utilizes CSS Modules for styling, ensuring that styles are scoped locally and avoiding conflicts.
+
+### Technologies Used
+
+- Next.js: A React framework for production.
+- TypeScript: For type safety and better development experience.
+- TMDB API: To fetch movie data.
+- CSS Modules: For scoped and maintainable CSS.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -19,24 +39,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Project Description
-
-This Movies App fetches the list of latest movies using the TMDB API. It displays the list of popular movies on the homepage, and users can click on any movie to view detailed information about it, including the title, release date, rating, and a brief synopsis.
-
-### Features
-
-- Latest Movies List: The homepage displays a list of the latest movies fetched from the TMDB API.
-- Movie Details: Clicking on any movie item will take you to a detailed page that provides comprehensive information about the movie.
-- Search Functionality: The app includes a search bar where users can search for any movie. As you type, it fetches and displays matching movies from the TMDB API.
-- CSS Modules: The project utilizes CSS Modules for styling, ensuring that styles are scoped locally and avoiding conflicts.
-
-### Technologies Used
-
-- Next.js: A React framework for production.
-- TypeScript: For type safety and better development experience.
-- TMDB API: To fetch movie data.
-- CSS Modules: For scoped and maintainable CSS.
 
 ## Learn More
 
