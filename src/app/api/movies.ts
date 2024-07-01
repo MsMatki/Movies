@@ -25,13 +25,11 @@ export const fetchFromAPI = async <T>(
 };
 
 export const getPopularMovies = async (): Promise<MovieResponseType> => {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data: MovieResponseType = await fetchFromAPI('/movie/popular');
   return data;
 };
 
 export const getMovieById = async (id: string): Promise<IMovieDetails> => {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data: IMovieDetails = await fetchFromAPI(`/movie/${id}`);
   return data;
 };
@@ -39,8 +37,6 @@ export const getMovieById = async (id: string): Promise<IMovieDetails> => {
 export const getMoviesBySearch = async (
   query: string
 ): Promise<MovieResponseType> => {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data: MovieResponseType = await fetchFromAPI(`/search/movie`, query);
-  // throw new Error()
   return data;
 };
