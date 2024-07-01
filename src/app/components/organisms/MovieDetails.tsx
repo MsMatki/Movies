@@ -40,7 +40,7 @@ const MovieDetails: FC<MovieDetailsProps> = ({ movie }) => {
         backgroundImage: `url(https://image.tmdb.org/t/p/original${backdrop_path})`,
       }}
     >
-      <div className={styles.overlay}>
+      <div className={styles.overlay}></div>
         <Container>
           <div className={styles.movieDetailsCard}>
             <div className={styles.posterContainer}>
@@ -68,7 +68,8 @@ const MovieDetails: FC<MovieDetailsProps> = ({ movie }) => {
             </div>
           </div>
         </Container>
-      </div>
+        
+      
     </div>
   );
 };

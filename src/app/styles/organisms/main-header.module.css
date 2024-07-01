@@ -36,11 +36,13 @@
 }
 
 @media (min-width: 768px) {
+  .header{
+    height: 60px;
+  }
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 60px;
   }
 }
